@@ -42,3 +42,10 @@
   transform: scale(0.8);
   box-shadow: 0 0 2px #000;
 }
+
+.todos {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+}
