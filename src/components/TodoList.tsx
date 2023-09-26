@@ -6,9 +6,16 @@ import STodo from "./Todo";
 type Props = {
   todos: Todo[];
   setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
+  completed: Todo[];
+  setCompleted: React.Dispatch<React.SetStateAction<Todo[]>>;
 };
 
-const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
+const TodoList: React.FC<Props> = ({
+  todos,
+  setTodos,
+  completed,
+  setCompleted,
+}) => {
   return (
     <div className="container">
       <div className="todos">
